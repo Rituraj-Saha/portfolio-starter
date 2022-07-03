@@ -1,3 +1,19 @@
+@font-face {
+  font-family: 'play';
+  src: url(../src/fonts/play-regular-webfont.woff2) format('woff2'),
+       url(../src/fonts/play-regular-webfont.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+*{
+  font-family: play;
+  font-size: normal;
+  
+}
+body{
+  margin: 0;
+}
 :root
 {
   --yellow: #F5C32C;
@@ -15,6 +31,36 @@
     padding: 0.5rem 3.5rem;
     overflow: hidden;
     color: var(--black);    
+}
+.button-without-shadow{
+  border-radius: 34px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 11px 26px 11px 26px;
+  background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.6%);
+  
+}
+.button-without-shadow:hover{
+  background: white;
+  cursor: pointer;
+  color: var(--orange);
+  border: 1px solid var(--orange);
+}
+.button{
+  border-radius: 34px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 11px 26px 11px 26px;
+  background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.6%);
+  box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
+}
+.button:hover{
+  background: white;
+  cursor: pointer;
+  color: var(--orange);
+  border: 1px solid var(--orange);
 }
 
 

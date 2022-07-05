@@ -1,11 +1,23 @@
-import React from 'react'
+// import React from 'react'
+import React, { useEffect, useState } from "react";
 import './Services.css'
 import HeartEmoji from "../../img/heartemoji.png"
 import Glasses from "../../img/glasses.png"
 import Humble from "../../img/humble.png"
 import Card from '../Card/Card'
 import Resume from '../../RITURAJ-SAHA-Resume-II.pdf'
+import Axios from 'axios';
 const Services = () => {
+  useEffect(() => {
+    Axios.get('http://localhost:8080/app/api/home/get-intro?field=intro')
+            .then(res => {
+               // this.setState({ usersCollection: res.data });
+               console.log(res.data.respose_data)
+            })
+            .catch(function (error) {
+                console.log(error);
+            })
+  });  
   return (
     <div className="services">
         {/* left side */}
@@ -43,8 +55,10 @@ const Services = () => {
             </div>
             <div className="blur s-blur2" style={{background: "var(--purple)",border:"solid"}}></div>
         </div>
-          
+      
+        
     </div>
+    
   )
 }
 

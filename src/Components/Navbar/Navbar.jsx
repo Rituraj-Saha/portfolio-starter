@@ -18,12 +18,12 @@ const Navbar = () => {
           <div className="n-list">
               
             <ul style={{ listStyleType: 'none' }}>
-              <li>Home</li>
-              <li>Services</li>
-              <li>Experiance</li>
-              <li>Portfolio</li>
-              <li>Testemonial</li>
-             
+              <li><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/portfolio">Portfolio</Link></li>
+              <li><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/portfolio">Services</Link></li>
+              <li><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/portfolio">Experiance</Link></li>
+              <li><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/portfolio">Testemonial</Link></li>
+              
+              <li> <Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/portfolio">Testemonial</Link></li>
               
               <li onClick={()=>{
                 console.log("Clicked on Blogs")

@@ -12,6 +12,7 @@ function App() {
 
     <div className="App">
 
+    
       <BrowserRouter>
         <Routes>
           <Route path='/portfolio' element={<>
@@ -24,6 +25,7 @@ function App() {
           <Route path="Blogs" element={<Blogs />} />
         </Routes>
       </BrowserRouter>
+    
     </div>
 
   );

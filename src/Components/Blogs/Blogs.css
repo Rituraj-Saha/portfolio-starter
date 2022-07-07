@@ -1,0 +1,30 @@
+.b-container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+.b-left{
+    display: flex;
+    flex: .2;
+    background: #E8E8E8;
+    flex-direction: column;
+}
+.b-left>span{
+    display: flex;
+    justify-content: center;
+    margin: 10px 10px 10px 10px;
+}
+.b-middle{
+    display: flex;
+    flex: .6;
+    flex-direction: column;
+   
+}
+.b-right{
+    display: flex;
+    flex:.2;
+    
+}
+.activeBtn{
+    background: #E8E8E8;
+}

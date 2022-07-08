@@ -18,7 +18,11 @@
     display: flex;
     flex: .6;
     flex-direction: column;
-   
+    height: 100%;
+    overflow: auto;
+}
+.b-middle>span{
+    padding: 1rem;
 }
 .b-right{
     display: flex;

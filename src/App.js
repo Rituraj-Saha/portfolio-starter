@@ -6,6 +6,9 @@ import Experience from "./Components/Experience/Experience";
 import Works from "./Components/Works/Works";
 import Blogs from "./Components/Blogs/Blogs";
 import { BrowserRouter, Routes, Route, Outlet, Link, Router, HashRouter} from "react-router-dom";
+import Portfolio from "./Components/Portfolio/Portfolio";
+import Testimoinal from "./Components/Testimonials/Testimoinal";
+import Contact from "./Components/Contact/Contact";
 
 function App() {
   return (
@@ -21,6 +24,9 @@ function App() {
             <Services />
             <Experience />
             <Works />
+            <Portfolio/>
+            <Testimoinal/>
+            <Contact/>
           </>} />
           <Route path="Blogs" element={<Blogs />} />
         </Routes>

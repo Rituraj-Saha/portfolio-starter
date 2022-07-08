@@ -23,8 +23,6 @@ const Navbar = () => {
               <li><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/portfolio">Experiance</Link></li>
               <li><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/portfolio">Testemonial</Link></li>
               
-              <li> <Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/portfolio">Testemonial</Link></li>
-              
               <li onClick={()=>{
                 console.log("Clicked on Blogs")
               }}>

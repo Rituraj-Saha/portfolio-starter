@@ -3,6 +3,8 @@ import './Blogs.css'
 import Navbar from "../../Components/Navbar/Navbar";
 import { BrowserRouter, Routes, Route, Outlet, Link, Router, HashRouter } from "react-router-dom";
 import Axios from 'axios';
+import ReactHtmlParser from 'html-react-parser';
+
 function Blogs() {
   let [content, setContent] = useState(null);
   let [mblogContent, setmBLogContent] = useState(null);
@@ -40,7 +42,7 @@ function Blogs() {
             document.getElementById(activeButton.prevActive).style.color = "white"
           }
         
-        setactiveButton({ prevActive: event.target.id })
+        setactiveButton({prevActive:event.target.id})
       }}>{blog}</span>
     )
   }
@@ -68,7 +70,7 @@ function Blogs() {
 
 
           {/* DynamicElement(content && nthElement(content,0).content) */}
-          <spn>{(mblogContent != null ? mblogContent : content && nthElement(content, 0).content)}</spn>
+          <span>{(mblogContent != null ? ReactHtmlParser(mblogContent) : content && ReactHtmlParser(nthElement(content, 0).content))}</span>
 
 
         </div>

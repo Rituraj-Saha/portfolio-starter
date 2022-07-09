@@ -33,7 +33,7 @@ const Contact = () => {
                 <input type="text" name="user-email" className="user" placeholder='Email' />
                 <textarea name="message" className="user" placeholder='Message'></textarea>
                 <input type="submit" value="Send" className='button'/>
-                <div className="blur c-blur2" style={{background: "var(--orange)",border:"solid"}}></div>
+                <div className="blur c-blur2" style={{background: "var(--purple)",border:"solid"}}></div>
                 <span>{done && "Thanks for contacting me, I will comeback to you shortly"}</span>
             </form>
         </div>

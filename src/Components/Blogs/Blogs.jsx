@@ -23,6 +23,15 @@ function Blogs() {
         console.log(error);
       })
 
+      const service = document.getElementById('servicesLink');
+      service.style.display = "none"
+      const ExperienceLink = document.getElementById('ExperienceLink');
+      ExperienceLink.style.display = "none"
+      const Testimonial = document.getElementById('Testimonialink');
+      Testimonial.style.display = "none"
+      
+      const PortfolioLink = document.getElementById('PortfolioLink');
+      PortfolioLink.style.display = "none"
 
   }, []);
 
@@ -55,7 +64,9 @@ function Blogs() {
 
   return (
     <div>
-      <Navbar />
+      <Navbar/>
+      
+
       <div className='b-container'>
         <div className="b-left">
 

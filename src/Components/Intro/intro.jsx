@@ -10,8 +10,12 @@ import thumbup from '../../img/thumbup.png'
 import Crown from '../../img/crown.png'
 import glassesimoji from '../../img/glassesimoji.png'
 import FloatingDiv from '../FloatingDiv/FloatingDiv'
+import {motion} from 'framer-motion'
 
 const intro = () => {
+
+    const transition = {duration :2, type: 'spring'}
+
     return (
         <div className="intro">
             <div className="i-left">
@@ -35,18 +39,37 @@ const intro = () => {
 
                 </div>
             </div>
+
+
             <div className="i-right">
 
                 <img src={Vector1} alt="" />
                 <img src={Vector2} alt="" />
                 <img src={boy} alt="" />
-                <img src={glassesimoji} alt="" />
-                <div style={{ top: '-4%', left: '60%' }}>
+                <motion.img
+                initial={{left: '-36%'}}
+                whileInView= {{left: '-24%'}}
+                transition={transition}
+                
+                src={glassesimoji} alt="" />
+                <motion.div
+                 initial={{top: '-4%',left: '74%'}}
+                 whileInView= {{left: '58%'}}
+                //  whileHover = {{top:'4%'}}
+                 transition={transition}
+                
+                style={{ top: '-4%', left: '60%' }}>
                     <FloatingDiv image={Crown} txt1='WEB' txt2='DEVELOPER'></FloatingDiv>
-                </div>
-                <div style={{ top: '23rem', left: '0rem' }}>
+                </motion.div>
+
+
+                <motion.div 
+                initial={{left: '-9rem',top: '23rem'}}
+                whileInView= {{left: '0rem'}}
+                transition={transition}
+                style={{ top: '23rem', left: '0rem' }}>
                     <FloatingDiv image={thumbup} txt1='Android' txt2='DEVELOPER'></FloatingDiv>
-                </div>
+                </motion.div>
                 {/* blur divs */}
                 <div className='blur' style={{ background: "rgb(238 210 255)" }}></div>
                 <div className='blur' style={{
